@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.4.0.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js" integrity="sha256-it5nQKHTz+34HijZJQkpNBIHsjpV8b6QzMJs9tmOBSo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/qunit/qunit-2.4.0.js"></script>
+  <script src="servicePartner-list.js"></script>
+  <script src="tests.js"></script>
+  <script src="tests2.js"></script>
+</head>
+<body>
+	<table>
+	<tbody><tr style="height: 30px;">
+		<td width="20%"><input type="checkbox" name="Q_partnerType" value="11" checked="checked" style="min-width: 0px;margin: 0px;">Supplier</td>
+		<td width="28%"><input type="checkbox" name="Q_partnerType" value="12" checked="checked" style="min-width: 0px;margin: 0px;">Booking Party</td>
+		<td width="31%"><input type="checkbox" name="Q_partnerType" value="1" checked="checked" style="min-width: 0px;margin: 0px;">Service Partner</td>
+		<td width="14%">
+			<select id="servicePartner_spTypeId" name="Q_servicePartner_spTypeId" style="width:100%">
+				
+				<option value="">Please Select...</option>
+				<option value="1">Standard Qualification</option>
+				<option value="0">Client-Specific</option>
+				<option value="2">Client-Directed</option>
+				<option value="3">One-Time</option>
+				<option value="4">Exemption Approval</option>
+				
+			</select>
+		</td>
+	</tr>
+	</tbody></table>
+
+	<input type="text" id="test-input">
+
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  </body>
+</html>
